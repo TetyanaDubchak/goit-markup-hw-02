@@ -47,9 +47,11 @@ color: var(--color-next-title);
 .menu-link:focus {
     color: var(--accent-color);
 }
+.contact {
+font-style: normal;
+}
 .contact-link {
-    font-style: normal;
-        font-weight: 400;
+   
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -70,7 +72,6 @@ background-color: var(--color-main-title);
 }
 /*==================MAIN PAGE========*/
 .hero-title {
-    font-weight: 700;
         font-size: 56px;
         line-height: 1.07;
         text-align: center;
@@ -82,10 +83,10 @@ background-color: var(--color-main-title);
     font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
-        align-items: center;
         letter-spacing: 0.04em;
         color: var(--color-main-title);
         background-color: var(--color-logo-bkg-button);
+        cursor: pointer;
 }
 
 .hero-button:hover,
@@ -108,12 +109,13 @@ background-color: var(--color-main-title);
 }
 
 .job-example-title {
-font-weight: 700;
+
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--color-next-title);
+    text-transform: capitalize;
 }
 
 .team-title {
@@ -123,6 +125,7 @@ font-weight: 700;
         text-align: center;
         letter-spacing: 0.02em;
         color: var(--color-next-title);
+        text-transform: capitalize;
 }
 
 .team-member {
@@ -143,14 +146,15 @@ font-weight: 700;
 
 /*=============PORTFOLIO PAGE=========*/
 .portfolio-select-btn {
+    font-family: inherit;
 font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
     text-align: center;
     letter-spacing: 0.04em;
     color: var(--color-logo-bkg-button);
     background-color: var(--color-footertext-bkg-subtitle);
+    cursor: pointer;
 }
 .portfolio-select-btn:hover,
 .portfolio-select-btn:focus {
