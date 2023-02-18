@@ -21,7 +21,19 @@ body {
 .link {
 text-decoration: none;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 /*==========HEADER=========*/
 .logotype {
     font-family: 'Raleway', sans-serif;
@@ -61,16 +73,12 @@ font-style: normal;
 .contact-link:focus {
     color: var(--accent-color);
 }
+
+
+/*==================HERO========*/
 .hero {
     background-color: var(--color-next-title);
 }
-.team {
-    background-color: var(--color-logo);
-}
-.team-item {
-background-color: var(--color-main-title);
-}
-/*==================MAIN PAGE========*/
 .hero-title {
         font-size: 56px;
         line-height: 1.07;
@@ -93,6 +101,8 @@ background-color: var(--color-main-title);
 .hero-button:focus {
     background-color: var(--accent-color);
 }
+
+/*==================ABOUT========*/
 .information-title {
     font-weight: 500;
         font-size: 20px;
@@ -108,8 +118,8 @@ background-color: var(--color-main-title);
         color: var(--color-text);
 }
 
+/*==================JOB========*/
 .job-example-title {
-
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -118,6 +128,14 @@ background-color: var(--color-main-title);
     text-transform: capitalize;
 }
 
+/*==================TEAM========*/
+.team {
+    background-color: var(--color-logo);
+}
+
+.team-item {
+    background-color: var(--color-main-title);
+}
 .team-title {
     font-weight: 700;
         font-size: 36px;
@@ -142,7 +160,6 @@ background-color: var(--color-main-title);
         letter-spacing: 0.02em;
         color: var(--color-text);
 }
-/*==================/MAIN PAGE========*/
 
 /*=============PORTFOLIO PAGE=========*/
 .portfolio-select-btn {
@@ -175,8 +192,6 @@ font-weight: 500;
         letter-spacing: 0.02em;
         color: var(--color-text);
 }
-
-/*=============/PORTFOLIO PAGE=========*/
 
 /*==================FOOTER========*/
 .part-logotype-light {
